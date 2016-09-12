@@ -9,13 +9,13 @@ usage: colorecho [-h] [-r] [-b BACKGROUND_COLOR] [-m MODIFIER]
 
 Prints terminal colorized versions of your strings.  For example:
 
-$ colorecho.py red "Hello fine sir"
+$ colorecho red "Hello fine sir"
 Hello fine sir
-$ colorecho.py -b 180 -m blink 1 "Hello fine sir"
+$ colorecho -b 180 -m blink 1 "Hello fine sir"
 Hello fine sir
-$ colorecho.py --raw -b 180 -m blink red Hello fine sir
+$ colorecho --raw -b 180 -m blink red Hello fine sir
 '\x1b[31;48;5;180;5mHello fine sir\x1b[0m' 
-$ cowsay Hello fine sir | colorecho.py -m blink green 
+$ cowsay Hello fine sir | colorecho -m blink green 
 <A blinking green cow who says: "Hello fine sir">
 
 positional arguments:
@@ -46,7 +46,7 @@ optional arguments:
 
 ## Installation
 
-Put `colorecho.py` in your path, make it executable with `$ chmod 755 colorecho.py`.
+`$ pip install colorecho`
 
 ## Other fun terminal toys
 * [`lolcat`: Rainbow color your console text!](https://github.com/busyloop/lolcat) `gem install lolcat`

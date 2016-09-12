@@ -1,0 +1,5 @@
+colorecho.egg-info/
+*.pyc
+dist/
+colorecho/__pycache__
+build/
