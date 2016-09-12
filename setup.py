@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
 	name='colorecho',
-	version='0.1',
+	version='0.2',
 	description='Wrap your strings in terminal color codes. From a terminal command.',
 	url='https://github.com/mahyar/colorecho',
 	author='Mahyar McDonald',

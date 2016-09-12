@@ -137,7 +137,7 @@ $ cowsay Hello fine sir | {0} -m blink green
 			help="Set a background color for your text. You can put a number between 0..256 if your terminal supports it or choose from these names: " + ', '.join(color.basicBackgroundColors.keys()))
 		parser.add_argument('-m','--modifier',
 			help="Set a modifier for your text. Choose from these names: " + ', '.join(color.basicModifiers.keys()) + '. Italic and strikeout is not widely supported in terminals.' )
-		parser.add_argument('colorName',
+		parser.add_argument('colorName', default="", nargs='?',
 			help="The name of the color you want.  You can put a number between 0..256 if your terminal supports it or choose from these names: " + ', '.join(color.basicForegroundColors.keys()))
 		parser.add_argument('string', default=[], nargs='*', help="Whatever text you want to colorize.")
 
